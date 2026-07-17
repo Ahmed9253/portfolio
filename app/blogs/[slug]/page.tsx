@@ -33,11 +33,11 @@ export default async function BlogPage({ params }: Props) {
           </nav>
           <Link href="/blogs" className="text-sm font-bold text-cyan-400">← Back to all articles</Link>
           <p className="mt-10 font-bold uppercase tracking-[0.25em] text-cyan-400">{blog.category} · {blog.publishedAt}</p>
-          <h1 className="mt-5 text-5xl font-black text-white md:text-7xl">{blog.title}</h1>
+          <h1 className="mt-5 text-3xl sm:text-5xl font-black text-white md:text-7xl">{blog.title}</h1>
           <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-zinc-400">{blog.excerpt}</p>
         </header>
-        <div className="mx-auto max-w-6xl px-4"><div role="img" aria-label={blog.title} style={{ backgroundImage: `url(${blog.image})` }} className="aspect-[16/8] w-full rounded-[2.5rem] bg-cover bg-center" /></div>
-        <article className="mx-auto max-w-3xl whitespace-pre-line px-4 py-16 text-lg leading-8 text-zinc-300">{blog.content}</article>
+        <div className="mx-auto max-w-6xl px-4"><div role="img" aria-label={blog.title} style={{ backgroundImage: `url(${blog.image})` }} className="aspect-[4/3] sm:aspect-[16/8] w-full rounded-[1.5rem] sm:rounded-[2.5rem] bg-cover bg-center" /></div>
+        <article className="mx-auto max-w-3xl whitespace-pre-line px-4 py-10 sm:py-16 text-base sm:text-lg leading-7 sm:leading-8 text-zinc-300">{blog.content}</article>
       </main>
       <Footer socials={content.socials} />
     </div>

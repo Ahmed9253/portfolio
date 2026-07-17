@@ -17,7 +17,7 @@ export default function News({ blogs: newsItems }: { blogs: Blog[] }) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-4xl font-bold text-center text-white mb-16"
+          className="text-3xl sm:text-4xl font-bold text-center text-white mb-12 sm:mb-16"
         >
           News & Events
         </motion.h2>
@@ -30,7 +30,7 @@ export default function News({ blogs: newsItems }: { blogs: Blog[] }) {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="group cursor-pointer"
           >
-            <Link href={`/blogs/${newsItems[0].slug}`} className="block relative overflow-hidden rounded-[2.5rem] mb-6">
+            <Link href={`/blogs/${newsItems[0].slug}`} className="block relative overflow-hidden rounded-[1.5rem] sm:rounded-[2.5rem] mb-6">
               <img
                 src={newsItems[0].image}
                 alt={newsItems[0].title}
@@ -56,7 +56,7 @@ export default function News({ blogs: newsItems }: { blogs: Blog[] }) {
                 className="group cursor-pointer flex flex-col md:flex-row gap-6"
               >
                 <div className="md:w-1/2 flex-shrink-0">
-                  <Link href={`/blogs/${item.slug}`} className="block relative overflow-hidden rounded-[2rem] h-48 md:h-full">
+                  <Link href={`/blogs/${item.slug}`} className="block relative overflow-hidden rounded-[1.5rem] sm:rounded-[2rem] h-48 md:h-full">
                     <img
                       src={item.image}
                       alt={item.title}

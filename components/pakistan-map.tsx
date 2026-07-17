@@ -18,7 +18,7 @@ export default function PakistanMap() {
             <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
           </div>
           <div className="relative">
-            <div className="text-8xl md:text-[10rem] font-black text-zinc-800">
+            <div className="text-5xl sm:text-7xl md:text-8xl lg:text-[10rem] font-black text-zinc-800">
               PAKISTAN
             </div>
             <div className="absolute inset-0 flex items-center justify-center">

@@ -62,9 +62,9 @@ export default function TeamServices({ teamMembers }: { teamMembers: TeamMember[
           className="grid grid-cols-1 md:grid-cols-3 gap-0 rounded-[2.5rem] overflow-hidden border border-zinc-800 shadow-2xl"
         >
           {/* Column 1: Services Grid */}
-          <motion.div variants={columnVariants} className="bg-zinc-900/60 p-10 md:p-12 flex flex-col justify-center z-10">
-            <h3 className="text-white font-bold mb-10 text-3xl tracking-tight">Our Services</h3>
-            <div className="grid grid-cols-2 gap-8">
+          <motion.div variants={columnVariants} className="bg-zinc-900/60 p-6 sm:p-10 md:p-12 flex flex-col justify-center z-10">
+            <h3 className="text-white font-bold mb-8 sm:mb-10 text-2xl sm:text-3xl tracking-tight">Our Services</h3>
+            <div className="grid grid-cols-2 gap-5 sm:gap-8">
               {services.map((s, i) => (
                 <motion.div
                   key={i}
@@ -72,8 +72,8 @@ export default function TeamServices({ teamMembers }: { teamMembers: TeamMember[
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 >
-                  <div className="mb-4 flex items-center justify-center">
-                    <s.icon className={s.color} size={40} />
+                  <div className="mb-3 sm:mb-4 flex items-center justify-center">
+                    <s.icon className={s.color} size={36} />
                   </div>
                   <span className="text-xs font-bold text-zinc-400 uppercase tracking-widest group-hover:text-white transition-colors">{s.title}</span>
                 </motion.div>
@@ -82,8 +82,8 @@ export default function TeamServices({ teamMembers }: { teamMembers: TeamMember[
           </motion.div>
 
           {/* Column 2: Dark Text Box */}
-          <motion.div variants={columnVariants} className="bg-zinc-900 text-white flex flex-col justify-center px-12 py-20 z-20 shadow-2xl">
-            <h3 className="text-4xl md:text-5xl font-bold mb-8 leading-tight text-white">We&apos;re idealists and strategic thinkers.</h3>
+          <motion.div variants={columnVariants} className="bg-zinc-900 text-white flex flex-col justify-center px-6 py-12 sm:px-8 sm:py-16 md:px-12 md:py-20 z-20 shadow-2xl">
+            <h3 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-6 sm:mb-8 leading-tight text-white">We&apos;re idealists and strategic thinkers.</h3>
             <p className="text-zinc-400 text-base mb-12 leading-relaxed">
               Transforming complex challenges into elegant digital solutions with a focus on innovation and scalability.
             </p>
@@ -98,7 +98,7 @@ export default function TeamServices({ teamMembers }: { teamMembers: TeamMember[
           </motion.div>
 
           {/* Column 3: Team Image with Label */}
-          <motion.div variants={columnVariants} className="relative aspect-square md:aspect-auto min-h-[500px] overflow-hidden bg-zinc-800 z-10">
+          <motion.div variants={columnVariants} className="relative aspect-square md:aspect-auto min-h-[350px] sm:min-h-[450px] md:min-h-[500px] overflow-hidden bg-zinc-800 z-10">
             {currentMember ? <><AnimatePresence mode="wait">
               <motion.img
                 key={currentMember.id}
@@ -114,7 +114,7 @@ export default function TeamServices({ teamMembers }: { teamMembers: TeamMember[
 
             <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent pointer-events-none" />
 
-            <div className="absolute bottom-0 right-0 bg-cyan-500 text-zinc-950 px-8 py-6 rounded-tl-[2rem] shadow-xl overflow-hidden">
+            <div className="absolute bottom-0 right-0 bg-cyan-500 text-zinc-950 px-5 py-4 sm:px-8 sm:py-6 md:px-8 md:py-6 rounded-tl-[2rem] shadow-xl overflow-hidden">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentMember.id}
@@ -123,8 +123,8 @@ export default function TeamServices({ teamMembers }: { teamMembers: TeamMember[
                   exit={{ y: -20, opacity: 0 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <p className="text-xl font-black tracking-tight">{currentMember.name}</p>
-                  <p className="text-xs font-bold opacity-80 uppercase tracking-widest mt-1">{currentMember.role}</p>
+                  <p className="text-base sm:text-xl font-black tracking-tight">{currentMember.name}</p>
+                  <p className="text-[10px] sm:text-xs font-bold opacity-80 uppercase tracking-widest mt-1">{currentMember.role}</p>
                   <div className="flex gap-2.5 mt-3">
                     {Object.entries(currentMember.socials).filter(([,url]) => url).map(([key]) => {
                       const icon = teamSocialIcons[key];

@@ -40,7 +40,7 @@ export default function Hero({ image }: { image?: string }) {
         ))}
       </div>
 
-      <div className="pointer-events-none absolute left-1/2 top-[47%] h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 md:h-[700px] md:w-[700px]">
+      <div className="pointer-events-none absolute left-1/2 top-[47%] h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 sm:h-[420px] sm:w-[420px] md:h-[700px] md:w-[700px]">
         <div className="hero-glow absolute inset-4 rounded-full bg-[radial-gradient(circle,rgba(34,211,238,0.22),transparent_67%)] blur-3xl" />
         <div className="absolute -inset-10 rounded-full border border-cyan-300/[0.08]" />
         <div className="absolute -inset-24 rounded-full border border-indigo-300/[0.05]" />

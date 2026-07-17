@@ -65,9 +65,9 @@ export default function Footer({ socials }: { socials?: SocialLinks }) {
           </motion.div>
         </div>
 
-        <div className="mt-12 border-t border-zinc-800 pt-8 text-center text-sm text-zinc-500">
-          © 2026 DevQuantums. All rights reserved.
-          <a href="/admin" className="ml-2 text-zinc-600 hover:text-cyan-400 transition-colors">Admin</a>
+        <div className="mt-12 border-t border-zinc-800 pt-8 flex flex-col sm:flex-row items-center justify-center gap-2 text-sm text-zinc-500">
+          <span>© 2026 DevQuantums. All rights reserved.</span>
+          <a href="/admin" className="text-zinc-600 hover:text-cyan-400 transition-colors">Admin</a>
         </div>
       </div>
     </footer>

@@ -14,7 +14,7 @@ export default async function ProjectsPage() {
       <SiteHeader />
       <main className="mx-auto max-w-7xl px-4 py-20">
         <p className="font-bold uppercase tracking-[0.25em] text-cyan-400">Our work</p>
-        <h1 className="mt-4 text-5xl font-black text-white md:text-7xl">Projects built for impact.</h1>
+        <h1 className="mt-4 text-3xl sm:text-5xl font-black text-white md:text-7xl">Projects built for impact.</h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-zinc-400">Strategy, design, and engineering working together to create lasting digital products.</p>
         {projects.length ? (
           <div className="mt-14 grid gap-8 md:grid-cols-2">

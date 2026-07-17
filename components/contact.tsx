@@ -58,7 +58,7 @@ export default function Contact() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <h2 className="text-4xl font-bold text-center text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center text-white mb-4">
             Let&apos;s work together
           </h2>
           <p className="text-gray-400 text-center mb-10">Have a project in mind? Send us a message!</p>

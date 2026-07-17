@@ -16,7 +16,7 @@ export default function About({ socials }: { socials?: SocialLinks }) {
           <span>01 — Studio</span>
         </div>
 
-        <div className="grid items-center gap-16 md:grid-cols-[0.85fr_1.15fr] lg:gap-24">
+        <div className="grid items-center gap-10 sm:gap-16 md:grid-cols-[0.85fr_1.15fr] lg:gap-24">
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -24,18 +24,18 @@ export default function About({ socials }: { socials?: SocialLinks }) {
             transition={{ duration: 0.8, ease: 'easeOut' }}
             className="flex flex-col items-start"
           >
-            <div className="relative mb-9 flex h-40 w-40 items-center justify-center md:h-48 md:w-48">
+            <div className="relative mb-8 sm:mb-9 flex h-32 w-32 sm:h-40 sm:w-40 items-center justify-center md:h-48 md:w-48">
               <motion.div
                 animate={{ rotate: [0, 4, -3, 0], scale: [1, 1.04, 0.98, 1] }}
                 transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
                 className="nav-blob absolute inset-0 bg-gradient-to-br from-cyan-300 via-cyan-500 to-indigo-600"
               />
-              <span className="relative font-mono text-4xl font-black tracking-tighter text-zinc-950 md:text-5xl">
+              <span className="relative font-mono text-3xl sm:text-4xl font-black tracking-tighter text-zinc-950 md:text-5xl">
                 &lt;/dQ&gt;
               </span>
             </div>
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-zinc-500">Software company</p>
-            <h2 className="mt-3 text-4xl font-black tracking-[-0.05em] md:text-5xl">DevQuantums</h2>
+            <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.22em] text-zinc-500">Software company</p>
+            <h2 className="mt-3 text-3xl sm:text-4xl font-black tracking-[-0.05em] md:text-5xl">DevQuantums</h2>
           </motion.div>
 
           <motion.div
@@ -44,7 +44,7 @@ export default function About({ socials }: { socials?: SocialLinks }) {
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.75, delay: 0.15, ease: 'easeOut' }}
           >
-            <h3 className="max-w-3xl text-3xl font-medium leading-[1.15] tracking-[-0.035em] md:text-5xl">
+            <h3 className="max-w-3xl text-2xl sm:text-3xl font-medium leading-[1.15] tracking-[-0.035em] md:text-5xl">
               We turn complex ideas into software experiences that feel
               <span className="italic text-cyan-400"> remarkably simple.</span>
             </h3>
