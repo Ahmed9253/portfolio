@@ -16,6 +16,16 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Content admin
+
+Projects, blog posts, and team members are managed at [http://localhost:3000/admin](http://localhost:3000/admin).
+
+1. Copy `.env.example` to `.env.local`.
+2. Set a strong `ADMIN_PASSWORD` and a long, random `ADMIN_SESSION_SECRET`.
+3. Restart the development server and sign in at `/admin`.
+
+Content is stored in `content/content.json`. This file-backed setup works for local development and Node hosting with a persistent writable filesystem. For serverless hosting, move the functions in `lib/content.ts` to a persistent database before production deployment.
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
@@ -34,3 +44,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# portfolio
