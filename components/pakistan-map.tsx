@@ -4,7 +4,7 @@ import { motion } from 'motion/react';
 
 export default function PakistanMap() {
   return (
-    <section className="py-12 px-4 bg-zinc-950">
+    <section className="py-8 sm:py-12 px-4 bg-zinc-950">
       <div className="max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}

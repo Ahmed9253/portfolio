@@ -6,7 +6,7 @@ import { socialHref, socialLinkConfig } from '@/lib/social-links';
 
 export default function About({ socials }: { socials?: SocialLinks }) {
   return (
-    <section id="studio" className="relative overflow-hidden bg-[#0c0c0d] px-5 py-24 text-zinc-100 md:py-32">
+    <section id="studio" className="relative overflow-hidden bg-[#0c0c0d] px-5 py-14 sm:py-24 md:py-32 text-zinc-100">
       <span className="absolute -right-8 top-0 select-none text-[14rem] font-black leading-none text-white/[0.025] md:text-[24rem]">
         dQ
       </span>

@@ -10,7 +10,7 @@ export default function Footer({ socials }: { socials?: SocialLinks }) {
 
   return (
     <footer className="border-t border-zinc-800 bg-zinc-950 text-white">
-      <div className="mx-auto max-w-7xl px-4 py-16">
+      <div className="mx-auto max-w-7xl px-4 py-10 sm:py-16">
         <div className="grid gap-12 md:grid-cols-3">
           <motion.div
             initial={{ opacity: 0, y: 24 }}

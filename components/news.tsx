@@ -10,7 +10,7 @@ const badgeColors = ['bg-yellow-400', 'bg-blue-500', 'bg-emerald-500'];
 export default function News({ blogs: newsItems }: { blogs: Blog[] }) {
   if (!newsItems.length) return null;
   return (
-    <section id="news" className="py-24 px-4 bg-zinc-900">
+    <section id="news" className="py-14 sm:py-24 px-4 bg-zinc-900">
       <div className="max-w-6xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}

@@ -52,7 +52,7 @@ export default function TeamServices({ teamMembers }: { teamMembers: TeamMember[
   };
 
   return (
-    <section id="studio" className="py-20 md:py-24 px-4 bg-zinc-950">
+    <section id="studio" className="py-12 sm:py-20 md:py-24 px-4 bg-zinc-950">
       <div className="max-w-[90rem] mx-auto">
         <motion.div
           variants={containerVariants}
