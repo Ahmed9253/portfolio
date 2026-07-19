@@ -14,9 +14,9 @@ export type SocialLinkConfig = {
 export const socialLinkConfig: SocialLinkConfig[] = [
   { key: 'instagram', label: 'Instagram', placeholder: 'https://instagram.com/your-profile', type: 'url', icon: FaInstagram },
   { key: 'whatsapp', label: 'WhatsApp', placeholder: 'https://wa.me/923001234567', type: 'url', icon: FaWhatsapp },
-  { key: 'gmail', label: 'Gmail', placeholder: 'hello@devquantums.com', type: 'email', icon: SiGmail },
+  { key: 'gmail', label: 'Gmail', placeholder: 'hello@softonic.com', type: 'email', icon: SiGmail },
   { key: 'x', label: 'X', placeholder: 'https://x.com/your-profile', type: 'url', icon: FaXTwitter },
-  { key: 'linkedin', label: 'LinkedIn', placeholder: 'https://linkedin.com/company/devquantums', type: 'url', icon: FaLinkedinIn },
+  { key: 'linkedin', label: 'LinkedIn', placeholder: 'https://linkedin.com/company/softonic-it-solutions', type: 'url', icon: FaLinkedinIn },
 ];
 
 export function socialHref(key: keyof SocialLinks, value: string) {

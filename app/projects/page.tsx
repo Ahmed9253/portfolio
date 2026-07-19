@@ -5,7 +5,7 @@ import SiteHeader from '@/components/site-header';
 import { getContent } from '@/lib/content';
 
 export const dynamic = 'force-dynamic';
-export const metadata: Metadata = { title: 'Projects | DevQuantums', description: 'Explore our software projects.' };
+export const metadata: Metadata = { title: 'Projects | Softonic IT Solutions', description: 'Explore our software projects.' };
 
 export default async function ProjectsPage() {
   const { projects, socials } = await getContent();

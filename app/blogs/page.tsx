@@ -5,7 +5,7 @@ import SiteHeader from '@/components/site-header';
 import { getContent } from '@/lib/content';
 
 export const dynamic = 'force-dynamic';
-export const metadata: Metadata = { title: 'Blog | DevQuantums', description: 'Ideas from the DevQuantums team.' };
+export const metadata: Metadata = { title: 'Blog | Softonic IT Solutions', description: 'Ideas from the Softonic IT Solutions team.' };
 
 export default async function BlogsPage() {
   const { blogs, socials } = await getContent();

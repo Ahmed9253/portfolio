@@ -1,6 +1,6 @@
 'use client';
 
-import { Code2, X } from 'lucide-react';
+import { Zap, X } from 'lucide-react';
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
 import Link from 'next/link';
@@ -46,7 +46,7 @@ export default function Navbar() {
                         className="absolute inset-0 z-20 flex cursor-pointer items-center justify-center text-white"
                     >
                         <motion.span whileHover={{ scale: 1.12 }} whileTap={{ scale: 0.88 }}>
-                            <Code2 size={25} />
+                            <Zap size={25} />
                         </motion.span>
                     </button>
                 )}
@@ -60,9 +60,9 @@ export default function Navbar() {
                                 className="flex items-center gap-3"
                             >
                                 <span className="flex h-9 w-9 items-center justify-center rounded-full bg-cyan-400 text-zinc-950">
-                                    <Code2 size={18} />
+                                    <Zap size={18} />
                                 </span>
-                                <span className="text-sm font-bold tracking-tight text-white">DevQuantums</span>
+                                <span className="text-sm font-bold tracking-tight text-white">Softonic IT Solutions</span>
                             </motion.div>
                         )}
                     </AnimatePresence>

@@ -26,7 +26,7 @@ export default function AdminLogin() {
         <Link href="/" className="inline-flex items-center gap-2 text-sm font-bold text-zinc-500 hover:text-cyan-400 transition-colors mb-6">
           <ArrowLeft size={16} /> Back to site
         </Link>
-        <p className="font-bold text-cyan-400">DevQuantums</p>
+        <p className="font-bold text-cyan-400">Softonic IT Solutions</p>
         <h1 className="mt-3 text-3xl font-black text-white">Admin sign in</h1>
         <p className="mt-2 text-sm text-zinc-400">Use the password configured in your environment.</p>
         <label className="mt-8 block text-sm font-semibold text-zinc-300">Password</label>

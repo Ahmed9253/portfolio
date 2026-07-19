@@ -8,11 +8,11 @@ export default function About({ socials }: { socials?: SocialLinks }) {
   return (
     <section id="studio" className="relative overflow-hidden bg-[#0c0c0d] px-5 py-14 sm:py-24 md:py-32 text-zinc-100">
       <span className="absolute -right-8 top-0 select-none text-[14rem] font-black leading-none text-white/[0.025] md:text-[24rem]">
-        dQ
+        ⚡
       </span>
       <div className="relative mx-auto max-w-[82rem]">
         <div className="mb-16 flex items-center justify-between border-b border-white/15 pb-5 text-[11px] font-semibold uppercase tracking-[0.28em] text-zinc-500">
-          <span>About DevQuantums</span>
+          <span>About Softonic IT Solutions</span>
           <span>01 — Studio</span>
         </div>
 
@@ -30,12 +30,14 @@ export default function About({ socials }: { socials?: SocialLinks }) {
                 transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
                 className="nav-blob absolute inset-0 bg-gradient-to-br from-cyan-300 via-cyan-500 to-indigo-600"
               />
-              <span className="relative font-mono text-3xl sm:text-4xl font-black tracking-tighter text-zinc-950 md:text-5xl">
-                &lt;/dQ&gt;
+              <span className="relative flex h-full w-full items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 text-zinc-950">
+                  <path d="M13 3L4 14h7l-2 7 9-11h-7l2-7z" />
+                </svg>
               </span>
             </div>
             <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.22em] text-zinc-500">Software company</p>
-            <h2 className="mt-3 text-3xl sm:text-4xl font-black tracking-[-0.05em] md:text-5xl">DevQuantums</h2>
+            <h2 className="mt-3 text-3xl sm:text-4xl font-black tracking-[-0.05em] md:text-5xl">Softonic IT Solutions</h2>
           </motion.div>
 
           <motion.div

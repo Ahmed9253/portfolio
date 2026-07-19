@@ -11,7 +11,7 @@ type Props = { params: Promise<{ slug: string }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const blog = (await getContent()).blogs.find((item) => item.slug === slug);
-  return blog ? { title: `${blog.title} | DevQuantums`, description: blog.excerpt } : {};
+  return blog ? { title: `${blog.title} | Softonic IT Solutions`, description: blog.excerpt } : {};
 }
 
 export default async function BlogPage({ params }: Props) {

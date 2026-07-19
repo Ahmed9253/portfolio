@@ -58,7 +58,7 @@ export default function LoadingScreen() {
 
             <div className="flex flex-col items-center gap-5">
               <p className="text-sm font-medium tracking-wide text-zinc-400">
-                Setting up link to DevQuantum servers...
+                Setting up link to Softonic IT Solutions servers...
               </p>
 
               <div className="relative h-1 w-72 overflow-hidden rounded-full bg-zinc-800">

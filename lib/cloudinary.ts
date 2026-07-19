@@ -21,7 +21,7 @@ export function isCloudinaryConfigured() {
 export async function uploadToCloudinary(file: Buffer, filename: string): Promise<string> {
   const result = await new Promise<{ secure_url: string }>((resolve, reject) => {
     const uploadStream = cloudinary.uploader.upload_stream(
-      { public_id: filename, folder: 'devquantums' },
+      { public_id: filename, folder: 'softonic' },
       (error, result) => {
         if (error) reject(error);
         else resolve(result as { secure_url: string });

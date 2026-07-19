@@ -6,7 +6,7 @@ import type { SocialLinks } from '@/lib/content';
 import { socialHref, socialLinkConfig } from '@/lib/social-links';
 
 export default function Footer({ socials }: { socials?: SocialLinks }) {
-  const email = socials?.gmail || 'info@devquantums.com';
+  const email = socials?.gmail || 'info@softonic.com';
 
   return (
     <footer className="border-t border-zinc-800 bg-zinc-950 text-white">
@@ -18,7 +18,7 @@ export default function Footer({ socials }: { socials?: SocialLinks }) {
             viewport={{ once: true, amount: 0.2 }}
             className="space-y-5"
           >
-            <h3 className="text-2xl font-bold text-cyan-400">DevQuantums</h3>
+            <h3 className="text-2xl font-bold text-cyan-400">Softonic IT Solutions</h3>
             <p className="max-w-sm text-sm leading-relaxed text-zinc-400">
               A software company building dependable web, cloud, AI, and business solutions from Pakistan.
             </p>
@@ -66,7 +66,7 @@ export default function Footer({ socials }: { socials?: SocialLinks }) {
         </div>
 
         <div className="mt-12 border-t border-zinc-800 pt-8 flex flex-col sm:flex-row items-center justify-center gap-2 text-sm text-zinc-500">
-          <span>© 2026 DevQuantums. All rights reserved.</span>
+          <span>© 2026 Softonic IT Solutions. All rights reserved.</span>
           <a href="/admin" className="text-zinc-600 hover:text-cyan-400 transition-colors">Admin</a>
         </div>
       </div>

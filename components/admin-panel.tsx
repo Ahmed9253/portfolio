@@ -130,7 +130,7 @@ export default function AdminPanel({ initialData }: { initialData: ContentData }
       <aside className={`fixed left-0 top-0 z-50 flex h-screen w-72 flex-col border-r border-white/[0.08] bg-[#0d0d10] transition-transform duration-300 lg:sticky ${mobileMenuOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}`}>
         <div className="flex h-24 items-center gap-3 border-b border-white/[0.08] px-5">
           <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-cyan-400 font-mono text-sm font-black text-zinc-950">dQ</div>
-          <div><p className="text-sm font-black tracking-tight">DevQuantums</p><p className="text-xs text-zinc-500">Content workspace</p></div>
+          <div><p className="text-sm font-black tracking-tight">Softonic IT Solutions</p><p className="text-xs text-zinc-500">Content workspace</p></div>
         </div>
         <nav className="flex-1 space-y-1 overflow-y-auto p-4">
           <p className="mb-3 px-3 text-[10px] font-bold uppercase tracking-[0.22em] text-zinc-600">Workspace</p>

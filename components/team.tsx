@@ -32,7 +32,7 @@ export default function Team() {
               className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
             />
             <div className="absolute bottom-4 right-4 bg-zinc-900/90 backdrop-blur text-white px-6 py-4 rounded-2xl border border-zinc-700">
-              <p className="text-xl font-semibold">DevQuantums</p>
+              <p className="text-xl font-semibold">Softonic IT Solutions</p>
               <p className="text-sm text-gray-400">Innovating Since 2024</p>
             </div>
             <div className="absolute bottom-6 right-6 flex gap-2">

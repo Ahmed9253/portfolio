@@ -1,7 +1,7 @@
 import { createHmac, timingSafeEqual } from 'node:crypto';
 import { cookies } from 'next/headers';
 
-export const SESSION_COOKIE = 'devquantums_admin';
+export const SESSION_COOKIE = 'softonic_admin';
 const SESSION_AGE = 60 * 60 * 24 * 7;
 
 function safeEqual(left: string, right: string) {

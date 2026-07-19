@@ -20,7 +20,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "DevQuantums | Software Company",
+  title: "Softonic IT Solutions | Software Company",
   description: "Innovative Software Solutions from Pakistan",
 };
 

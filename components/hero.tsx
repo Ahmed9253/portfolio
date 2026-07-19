@@ -3,7 +3,7 @@
 import { motion } from 'motion/react';
 import Link from 'next/link';
 
-const TITLE = 'DevQuantums';
+const TITLE = 'Softonic IT Solutions';
 const MERIDIANS = [0, 30, 60, 90, 120, 150];
 const STARS = Array.from({ length: 22 });
 
@@ -83,18 +83,26 @@ export default function Hero({ image }: { image?: string }) {
             variants={{ show: { transition: { staggerChildren: 0.06, delayChildren: 0.2 } } }}
             className="hero-title-hollow font-display text-[clamp(3.3rem,9.5vw,8.5rem)] font-black leading-[0.9] tracking-[0.02em]"
           >
-            {TITLE.split('').map((ch, i) => (
-              <motion.span
-                key={i}
-                variants={{
-                  hidden: { opacity: 0, y: 40, rotateX: -90 },
-                  show: { opacity: 1, y: 0, rotateX: 0, transition: { duration: 0.6, ease: 'easeOut' } },
-                }}
-                className="inline-block"
-              >
-                {ch}
-              </motion.span>
-            ))}
+            {TITLE.split(' ').map((word, wi) => (
+              <span key={wi} className="inline-block">
+                {word.split('').map((ch, ci) => (
+                  <motion.span
+                    key={ci}
+                    variants={{
+                      hidden: { opacity: 0, y: 40, rotateX: -90 },
+                      show: { opacity: 1, y: 0, rotateX: 0, transition: { duration: 0.6, ease: 'easeOut' } },
+                    }}
+                    className="inline-block"
+                  >
+                    {ch}
+                  </motion.span>
+                ))}
+              </span>
+            )).reduce<React.ReactNode[]>((acc, word, i) => {
+              if (i > 0) acc.push(<span key={`gap-${i}`} className="inline-block w-[0.3em]" />);
+              acc.push(word);
+              return acc;
+            }, [])}
           </motion.h1>
         </div>
 
