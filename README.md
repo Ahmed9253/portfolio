@@ -8,112 +8,126 @@ A modern, responsive, and animated company website built with the latest web tec
 
 ## ✨ Features
 
-- ⚡ Lightning-fast performance with Next.js
-- 🎨 Modern and responsive UI
-- 🎭 Smooth animations powered by Framer Motion
-- 📱 Mobile-first design
-- 🧩 Reusable and scalable components
-- 🌙 Clean and professional interface
-- ♿ Accessible and optimized user experience
+- ⚡ Built with Next.js for high performance
+- 🔷 Fully typed using TypeScript
+- 🎭 Smooth animations with Framer Motion
+- 🎨 Beautiful icons using Lucide React & React Icons
+- 📱 Fully responsive design
+- 🧩 Modular and reusable components
+- 🚀 Optimized for production
+- ♿ Accessible and user-friendly interface
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Next.js**
-- **TypeScript**
-- **React**
-- **Framer Motion**
-- **Lucide React**
-- **React Icons**
-- **CSS / Tailwind CSS** *(if applicable)*
+- Next.js
+- TypeScript
+- React
+- Framer Motion
+- Lucide React
+- React Icons
 
 ---
 
-## 📦 Installation
+## 📦 Getting Started
 
-Clone the repository:
+### Clone the repository
 
 ```bash
-git clone <your-repository-url>
+git clone <repository-url>
+cd <repository-name>
 ```
 
-Install dependencies:
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-Run the development server:
+### Configure Environment Variables
+
+Create a `.env` file in the project root and add the following:
+
+```env
+ADMIN_PASSWORD=
+ADMIN_SESSION_SECRET=
+JWT_SECRET=
+
+# MongoDB (add your URI later)
+MONGODB_URI=
+
+# Cloudinary (add your credentials later)
+CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
+```
+
+### Start the development server
 
 ```bash
 npm run dev
 ```
 
-Build for production:
-
-```bash
-npm run build
-```
-
-Start the production server:
-
-```bash
-npm start
-```
+Open http://localhost:3000 in your browser.
 
 ---
 
-## 📂 Project Structure
+## 🏗️ Production Build
 
-```
-app/
-components/
-public/
-styles/
-lib/
+```bash
+npm run build
+npm start
 ```
 
 ---
 
 ## 🤝 Contributing
 
-Contributions, suggestions, and improvements are welcome.
-
-Feel free to:
-
-- Fork the repository
-- Create a feature branch
-- Submit a Pull Request
+Contributions are welcome! Feel free to fork the repository, improve the project, and submit a pull request.
 
 ---
 
 ## ⚠️ Disclaimer
 
-This project is provided **as-is** for educational, learning, and development purposes.
+This project is provided **free of charge** for educational, personal, and commercial use.
 
-I am **not responsible** for any misuse, damages, illegal activities, or consequences resulting from the use, modification, or redistribution of this code.
+The author **does not take any responsibility** for any misuse, illegal activities, damages, data loss, security issues, or any consequences resulting from the use, modification, or distribution of this source code.
 
-Users are solely responsible for how they use this project.
+Use this project at your own risk.
 
 ---
 
 ## 📄 License
 
-This project is intentionally released **without a license**.
+**No License**
 
-You are **free to use, modify, copy, and distribute** this code for personal or commercial purposes.
+This repository is intentionally published **without a license**.
 
-No attribution is required, although it is appreciated.
+You are free to:
+
+- ✅ Use
+- ✅ Modify
+- ✅ Learn from
+- ✅ Share
+- ✅ Build upon
+
+No warranty or liability is provided by the author.
 
 ---
 
-## 👨‍💻 Designer & Developer
+## 👨‍💻 Author
 
-Designed and developed by **Muhammad**
+**Muhammad Ahmed**
+
+Designer & Developer
+
+---
+
+<div align="center">
+
+**Made with ❤️ using Next.js, TypeScript, Framer Motion, Lucide React, and React Icons.**
 
 If you found this project useful, consider giving it a ⭐ on GitHub.
 
----
-
-> Built with ❤️ using TypeScript, Next.js, Framer Motion, Lucide React, and React Icons.
+</div>
