@@ -1,47 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Soft IT Solutions
 
-## Getting Started
+A modern, responsive, and animated company website built with the latest web technologies.
 
-First, run the development server:
+🌐 **Live Demo:** https://softitsolutions.vercel.app/
+
+---
+
+## ✨ Features
+
+- ⚡ Lightning-fast performance with Next.js
+- 🎨 Modern and responsive UI
+- 🎭 Smooth animations powered by Framer Motion
+- 📱 Mobile-first design
+- 🧩 Reusable and scalable components
+- 🌙 Clean and professional interface
+- ♿ Accessible and optimized user experience
+
+---
+
+## 🛠️ Tech Stack
+
+- **Next.js**
+- **TypeScript**
+- **React**
+- **Framer Motion**
+- **Lucide React**
+- **React Icons**
+- **CSS / Tailwind CSS** *(if applicable)*
+
+---
+
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone <your-repository-url>
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Build for production:
 
-## Content admin
+```bash
+npm run build
+```
 
-Projects, blog posts, and team members are managed at [http://localhost:3000/admin](http://localhost:3000/admin).
+Start the production server:
 
-1. Copy `.env.example` to `.env.local`.
-2. Set a strong `ADMIN_PASSWORD` and a long, random `ADMIN_SESSION_SECRET`.
-3. Restart the development server and sign in at `/admin`.
+```bash
+npm start
+```
 
-Content is stored in `content/content.json`. This file-backed setup works for local development and Node hosting with a persistent writable filesystem. For serverless hosting, move the functions in `lib/content.ts` to a persistent database before production deployment.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📂 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+app/
+components/
+public/
+styles/
+lib/
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🤝 Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Contributions, suggestions, and improvements are welcome.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Feel free to:
 
-## Deploy on Vercel
+- Fork the repository
+- Create a feature branch
+- Submit a Pull Request
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# portfolio
+## ⚠️ Disclaimer
+
+This project is provided **as-is** for educational, learning, and development purposes.
+
+I am **not responsible** for any misuse, damages, illegal activities, or consequences resulting from the use, modification, or redistribution of this code.
+
+Users are solely responsible for how they use this project.
+
+---
+
+## 📄 License
+
+This project is intentionally released **without a license**.
+
+You are **free to use, modify, copy, and distribute** this code for personal or commercial purposes.
+
+No attribution is required, although it is appreciated.
+
+---
+
+## 👨‍💻 Designer & Developer
+
+Designed and developed by **Muhammad**
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
+
+---
+
+> Built with ❤️ using TypeScript, Next.js, Framer Motion, Lucide React, and React Icons.
